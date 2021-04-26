@@ -14,15 +14,15 @@ namespace Kartojimas
         }
         public override string NameMetodas()
         {
+            
             var sb = new StringBuilder();
-            List<char> visosBalses = new List<char> { 'a', 'e', 'i', 'o', 'u' };
-            ///var balses = "aeiou".ToList();
-            foreach (var raide in Name)
-            {
-                sb.Append(visosBalses.Contains(raide) ? (int)raide : raide);
-            }
-            return sb.ToString();
 
+            var balses = "aeiou".ToList();
+            foreach (var raide in Name)
+            {               
+                sb.Append(balses.Contains(raide) ? ((int)raide).ToString() : raide.ToString());
+            }
+            return  sb.ToString();
         }
         public override int NameKodas(int asmKodas)
         {
@@ -31,10 +31,7 @@ namespace Kartojimas
             {
                 kodas += (int)symbolis * asmKodas;
             }
-
             return kodas;
         }
-
-
     }
 }

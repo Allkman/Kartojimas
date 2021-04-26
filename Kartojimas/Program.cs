@@ -6,7 +6,9 @@ namespace Kartojimas
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var aklase = new AKlase("mama");
+            var nameMetodas = aklase.NameMetodas();
+            Console.WriteLine(nameMetodas);
         }
     }
 }
