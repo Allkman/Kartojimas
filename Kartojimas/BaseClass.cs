@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Kartojimas
 {
-    abstract class BaseClass
+    public abstract class BaseClass
     {
         protected BaseClass(string name)
         {
