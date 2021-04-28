@@ -6,19 +6,11 @@ using System.Threading.Tasks;
 
 namespace Kartojimas
 {
-    public class Kamuolys : Zaislas
+    public class Balionas : Zaislas
     {
-        Spalva spalva = new Spalva();        
-
-        public Kamuolys()
-        {
-
-        }
-
-
         public override void Mesti()
         {
-            ThrowCount += 1;
+            throw new NotImplementedException();
         }
     }
 }
