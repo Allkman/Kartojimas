@@ -8,6 +8,12 @@ namespace Kartojimas
 {
     public abstract class Zaislas
     {
+        protected Zaislas(int size, int throwCount)
+        {
+            Size = size;
+            ThrowCount = throwCount;
+        }
+
         public int Size { get; set; }
         public int ThrowCount { get; set; }
 

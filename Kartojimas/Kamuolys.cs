@@ -14,8 +14,8 @@ namespace Kartojimas
         {
 
         }
-
-
+        
+        
         public override void Mesti()
         {
             ThrowCount += 1;
