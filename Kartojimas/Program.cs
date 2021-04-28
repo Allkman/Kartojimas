@@ -6,9 +6,12 @@ namespace Kartojimas
     {
         static void Main(string[] args)
         {
-            var aklase = new AKlase("mama");
-            var nameMetodas = aklase.NameMetodas();
-            Console.WriteLine(nameMetodas);
+            //Random rnd = new Random();
+            //var sk = rnd.Next(); //objekto interfacas pasiekiamas per .(taska)
+
+            //var aklase = new AKlase("mama");
+            //var nameMetodas = aklase.NameMetodas();
+            //Console.WriteLine(nameMetodas);
         }
     }
 }
