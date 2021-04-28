@@ -8,13 +8,15 @@ namespace Kartojimas
 {
     public class Kamuolys
     {
-        Spalva color = new Spalva();
+        Spalva spalva = new Spalva();
+        
         private int ballSize = 7;
         private int throwCount = 0;
         public Kamuolys()
         {
 
         }
+        
         public void Mesti()
         {
             throwCount += 1;
