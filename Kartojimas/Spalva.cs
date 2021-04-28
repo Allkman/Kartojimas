@@ -8,24 +8,30 @@ namespace Kartojimas
 {
     public class Spalva
     {
-        private double maxValue = 255;
-        private double minValue = 0;
-        public List<double> Red { get; } = new List<double>{ 255, 0, 0 };
+        public byte R { get; private set; }
+        public byte G { get; private set; }
+        public byte B { get; private set; }
 
-        public List<double> Green { get; } = new List<double> { 0, 128, 0 };
-        public double Blue { get;}
-        public double Color { get;}
-        public Spalva(double red, double green, double blue)
+        public Spalva(byte r, byte g, byte b)
         {
-            Red = red;
-            Green = green;
-            Blue = blue;
+            R = r;
+            G = g;
+            B = b;
         }
-
         public Spalva()
         {
-
+            R = G = B = 255;
         }
 
+        public void SetColors(byte r, byte g, byte b)
+        {
+            R = r;
+            G = g;
+            B = b;
+        }
+        public void GetGrayScale(byte r, byte g, byte b)
+        {
+            r = g = b = 120;
+        }
     }
 }
