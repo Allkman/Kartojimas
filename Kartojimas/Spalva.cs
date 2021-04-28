@@ -29,10 +29,10 @@ namespace Kartojimas
             G = g;
             B = b;
         }
-        public int GetGreyScale()
+        public byte GetGreyScale()
         {
             var greyScale = (R + G + B) / 3;
-            return greyScale;
+            return (byte)greyScale;
         }
     }
 }
